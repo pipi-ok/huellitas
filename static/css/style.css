@@ -1,4 +1,41 @@
-* {
-    background-color: red;
+:root{
+    --bg-color:#F5F5DC;
+    --primary-color:#F2CBBB;
+    --secondary-color: #87CEEB;
+    --third-color: #8DA290;
+    --third-bis-color: #D3D3D3;
+    --bg-input-color: #FFAEA5; 
 }
 
+* {
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans";
+}
+
+.header{
+    background-color: var(--primary-color);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#logo{
+    font-weight: bolder;
+    font-size: 20pt;
+    color: var(--third-color);
+}
+
+/* #logo:hover{
+    animation:
+} */
+
+#banner{
+    background-image: url(../img/Banner1.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
