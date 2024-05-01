@@ -29,9 +29,26 @@
     color: var(--third-color);
 }
 
-/* #logo:hover{
-    animation:
-} */
+#logo:hover{
+    animation: voltereta 1s infinite;
+}
+
+@keyframes voltereta{
+    0%{ transform: rotate(0deg);}
+    25%{ transform: rotate(90deg);}
+    50%{ transform: rotate(180deg);}
+    75%{ transform: rotate(270deg);}
+    100%{transform: rotate(360deg);}
+   
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 5px;
+}
 
 #banner{
     background-image: url(../img/Banner1.jpeg);
