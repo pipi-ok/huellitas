@@ -15,6 +15,12 @@
     box-sizing: border-box;
     font-family: "Josefin Sans";
 }
+a{
+    text-decoration: none;
+}
+body{
+    background-color: var(--bg-color);
+}
 
 .header{
     background-color: var(--primary-color);
@@ -57,7 +63,14 @@ nav a{
 }
 
 .links_nav a:hover{
-    color: var(--bg-input-color)
+    color: var(--enfasis-color)
+}
+
+
+.links_nav{
+    list-style: none;
+    display: flex;
+    gap: 50px;
 }
 
 #banner{
@@ -95,7 +108,8 @@ nav a{
     display: grid;
     grid-template-columns: auto;
     justify-items: center;
-    height: 60px;
+    height: 50px;
+    padding: 80px;
     font-size:200%;
     text-shadow: 2px 2px 2px #525252;
     color: var(--bg-input-color)
@@ -132,7 +146,9 @@ nav a{
     background-image: linear-gradient(to right, var(--bg-input-color) 0%, rgb(238, 103, 125) 50%, rgb(119, 6, 25) 100%); 
     box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; 
     border: 2px solid rgb(119, 6, 25); 
-    display: inline-block;}
+    display: inline-block;
+    
+}
 
 .new_friend{
     
@@ -150,6 +166,11 @@ nav a{
     grid-template-rows: repeat(2,1fr);
     justify-items: center;
     row-gap: 40px;
+    
+}
+
+#transitos{
+    padding: 20px;
 }
 
 .transit_img{
@@ -169,16 +190,45 @@ nav a{
     color:var(--bg-input-color);
     background-color: var(--third-bis-color);
     /* position: absolute; */
-    bottom: -100%;
+    /* bottom: -100%; */
     padding: 30px;
     max-height: 100%;
     line-height: 30px;
     width: 100%;
  }
 
+ .transit-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+    justify-items: center;
+ }
+
  #pet_name{
     font-weight: bold;
     color: var(--enfasis-color);
+ }
+
+ footer{
+    background-color: var(--bg-input-color);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    color: var(--third-color);
+ }
+
+ #adress{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-size: 20px;
+    column-gap: 100px;
+    align-content: center;
+
  }
 
 
@@ -195,6 +245,22 @@ nav a{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3,1fr);
     }
+    .transit-grid{
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+    .transit_img{
+        width: 600px;
+        /* height: 400px; */
+    }
+    .transit_pet{
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        width: 600px;
+    }
+
  } 
 
 
@@ -203,5 +269,23 @@ nav a{
     .adopt-grid{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6,1fr);
+    }
+    .transit-grid{
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+    .transit_img{
+        width: 300px;
+        /* height: 400px; */
+    }
+    .transit_pet{
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        width: 300px;
+    }
+    #adress{
+        grid-template-columns: repeat(1,1fr);
     }
  }
