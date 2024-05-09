@@ -4,7 +4,8 @@
     --secondary-color: #87CEEB;
     --third-color: #8DA290;
     --third-bis-color: #D3D3D3;
-    --bg-input-color: #FFAEA5; 
+    --bg-input-color: #FFAEA5;
+    --enfasis-color: #993366  
 }
 
 * {
@@ -90,6 +91,16 @@ nav a{
     padding: 20px;
 }
 
+#title-class{
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    height: 60px;
+    font-size:200%;
+    text-shadow: 2px 2px 2px #525252;
+    color: var(--bg-input-color)
+}
+
 .new_friend_img{
     width: 300px;
     height: 400px;
@@ -133,3 +144,64 @@ nav a{
     
 }
 
+.adopt-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-items: center;
+    row-gap: 40px;
+}
+
+.transit_img{
+    width: 600px;
+    /* height: 400px; */
+}
+
+.transit_pet{
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 600px;
+}
+ .transit_detail{
+    font-size: 20px;
+    color:var(--bg-input-color);
+    background-color: var(--third-bis-color);
+    /* position: absolute; */
+    bottom: -100%;
+    padding: 30px;
+    max-height: 100%;
+    line-height: 30px;
+    width: 100%;
+ }
+
+ #pet_name{
+    font-weight: bold;
+    color: var(--enfasis-color);
+ }
+
+
+ /* ---------------------------------------------------------- */
+ /*Medis querys*/
+ /*PC*/
+ @media screen and (max-width:1920px) {
+    
+ }
+
+ /*TABLETS*/
+ @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .adopt-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+ } 
+
+
+ /*CELUS*/
+ @media screen and (max-width: 767px) {
+    .adopt-grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6,1fr);
+    }
+ }
