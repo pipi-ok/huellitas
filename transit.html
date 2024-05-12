@@ -4,14 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/css/style.css">
-    <link rel="shortcut icon" href="./static/img/cat.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/transit.css">
+    <link rel="shortcut icon" href="./static/img/icons8-cat-footprint-30.ico" type="image/x-icon">
     <title>Huellitas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="./static/uicons-regular-straight/css/uicons-regular-straight.css" rel="stylesheet">
+    
 </head>
 
 <body>
-
-
+    <header class="header">
     
+        <nav>
+          <div id="logo">
+            <a href="./index.html">
+              <i class="fi fi-rs-paw"></i>
+              <span id="logo-text">
+                Huellitas
+              </span>
+    
+            </a>
+          </div>
+       
+          <ul class="links_nav">
+                <li>
+                  <a href="./adopt.html">Adopciones</a>
+                </li>
+                <li>
+                  <a href="#">Tránsito</a>
+                </li>
+                <li>
+                  <a href="./donate.html">Donaciones</a>
+                </li>
+          </ul>
+          
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner">
+          <div class="banner-text-format">
+            <!-- La imagen se pone desde css -->
+            <h1>Huellitas</h1>
+            <h2>Amiguitos buscando hogar</h2>
+          </div>
+        </section>
+
+        <section id="transit-text" >
+            <h1 id="title-class">Podés ser tránsito!</h1>
+            <p>Sumate a nuestro equipo! Ayuda a los animalitos que necesitan un hogar y cuidalos hasta que lo puedan encontrar.</p>
+            <p>Es muy fácil sumarte, completá con tus datos el siguiente formulario y te estaremos contactando.</p>
+        </section>
+
+        <section class="form-transit">
+          <h2 id="transit-form-title">Registro - Tránsito</h2>
+          <form action="" method="get" id="transitRegister">
+              <div class="reg-field">
+                  <label for="firstname">Nombre: </label>
+                  <input type="text" name="firstname" id="firstname" maxlength="20" placeholder="Nombre">
+                  <div id="errorfirstname"></div>
+              </div>
+              
+
+              <div class="reg-field">
+                  <label for="lastname">Apellido: </label>
+                  <input type="text" name="lastname" id="lastname" maxlength="20" placeholder="Apellido">
+              </div>
+              
+              <div class="reg-field">
+                  <label for="email">E-mail: </label>
+                  <input type="email" name="email" id="email"  placeholder="E-mail">
+              </div>
+
+              <div class="reg-field">
+                <label for="phone">Teléfono: </label>
+                <input type="phone" name="phone" id="phone" >
+            </div>
+              
+              
+              
+              <div class="reg-field">
+                  <label for="birthdate">Fecha de nacimiento: </label>
+                  <input type="date" name="birthdate" id="birthdate" max="2024-01-01">
+              </div>
+              
+              <div class="reg-field">
+                  <label for="zona">Zona: </label>
+                  <select name="zona" id="zona" required>
+                      <option value="">Seleccione</option>
+                      <option value="ar">CABA</option>
+                      <option value="bo">GBA Norte</option>
+                      <option value="br">GBA Oeste</option>
+                      <option value="ch">GBA Sur</option>
+                  </select>
+              </div>
+              
+             
+              
+              <div class="reg-field">
+              
+              <label for="cats">Puedo alojar: Gatos</label>
+              <input type="radio" name="cat-dog" required id="cat" value="cat">
+              <label for="dogs" class="cat-dog">Perros</label>
+              <input type="radio" name="cat-dog"  value="dog">
+              <label for="cats&dogs" class="cat-dog">Perros y Gatos</label>
+              <input type="radio" name="cat-dog"  value="cat-dog">
+              </div>
+              
+              <div class="reg-field">
+                <input type="checkbox" name="terms" id="terms" required value="1">
+                <label for="terms">Acepto recibir mails de contacto e información, y aseguro que los datos que informé son precisos.</label>
+            </div>
+                
+              <div class="reg-field">
+                <input id="reg_btn" type="submit" value="Registrarse" class="btn-adopt">
+              </div>
+                
+
+
+          </form>
+          </section>
+
+
+
+    </main>
+
+    <footer id="footer">
+        <div>
+          <a href="./contact.html">Contactanos</a>
+        </div>
+        <div>
+          <h3>Powered by @Pipi-Dolo-Marie 🐾</h3>
+        </div>
+      </footer>
 </body>
 
 </html>
