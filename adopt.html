@@ -60,28 +60,31 @@
 
         <section class="form-transit">
           <h2 id="transit-form-title">Registro - Adopciones</h2>
-          <form action="" method="get" id="adoptRegister">
+          <form action="#" method="GET" id="adoptRegister">
               <div class="reg-field">
                   <label for="firstname">Nombre: </label>
                   <input type="text" name="firstname" id="firstname" maxlength="20" placeholder="Nombre">
-                  <div id="errorfirstname"></div>
-              </div>
+             </div>
+             <div class= "error" id="error-firstname"></div>
               
 
               <div class="reg-field">
                   <label for="lastname">Apellido: </label>
                   <input type="text" name="lastname" id="lastname" maxlength="20" placeholder="Apellido">
               </div>
+              <div class= "error" id="error-lastname"></div>
               
               <div class="reg-field">
                   <label for="email">E-mail: </label>
                   <input type="email" name="email" id="email"  placeholder="E-mail">
               </div>
+              <div class= "error" id="error-email"></div>
 
               <div class="reg-field">
                 <label for="phone">Teléfono: </label>
                 <input type="phone" name="phone" id="phone" >
             </div>
+            <div class= "error" id="error-phone"></div>
               
               
               
@@ -94,10 +97,10 @@
                   <label for="zona">Zona: </label>
                   <select name="zona" id="zona" required>
                       <option value="">Seleccione</option>
-                      <option value="ar">CABA</option>
-                      <option value="bo">GBA Norte</option>
-                      <option value="br">GBA Oeste</option>
-                      <option value="ch">GBA Sur</option>
+                      <option value="caba">CABA</option>
+                      <option value="gba-norte">GBA Norte</option>
+                      <option value="gba-oeste">GBA Oeste</option>
+                      <option value="gba-sur">GBA Sur</option>
                   </select>
               </div>
               
@@ -117,7 +120,7 @@
             </div>
                 
               <div class="reg-field">
-                <input id="reg_btn" type="submit" value="Registrarse" class="btn-adopt">
+                <input id="reg-btn-adopt" type="button" value="Registrarse" class="btn-adopt">
               </div>
                 
 
@@ -137,6 +140,7 @@
           <h3>Powered by @Pipi-Dolo-Marie 🐾</h3>
         </div>
       </footer>
+      <script src="./static/js/adopt.js"></script>
 </body>
 
 </html>
