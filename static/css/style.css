@@ -15,11 +15,9 @@
     box-sizing: border-box;
     font-family: "Josefin Sans";
 }
-
 a{
     text-decoration: none;
 }
-
 body{
     background-color: var(--bg-color);
 }
@@ -30,7 +28,8 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2;
+    font-size: 18px;
+    z-index: 9999;
 }
 
 #logo{
@@ -111,7 +110,7 @@ nav a{
     display: grid;
     grid-template-columns: auto;
     justify-items: center;
-    height: 50px;
+    height: 40px;
     padding: 80px;
     font-size:200%;
     text-shadow: 2px 2px 2px #525252;
@@ -132,7 +131,7 @@ nav a{
     bottom: -100%;
     padding: 30px;
     max-height: 100%;
-    line-height: 30px;
+    line-height: 40px;
     width: 100%;
     
     
@@ -147,7 +146,7 @@ nav a{
     font-weight: bolder; 
     font-variant: small-caps; 
     background-image: linear-gradient(to right, var(--bg-input-color) 0%, rgb(238, 103, 125) 50%, rgb(119, 6, 25) 100%); 
-    box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; 
+    box-shadow: rgb(0, 0, 0) 0px 0px 15px 5px; 
     border: 2px solid rgb(119, 6, 25); 
     display: inline-block;
     
