@@ -1,0 +1,38 @@
+#transit-text{
+    margin: 0px 10px;
+    margin-bottom: 15px;
+}
+
+#transit-text #title-class{
+    padding-top: 20px;
+    padding-bottom:50px;
+  
+}
+
+#transit-text p{
+    font-size: 20px;
+}
+
+#transit-form-title{
+    margin-left:10px;
+    margin-bottom:20px;
+}
+
+.reg-field{
+    margin: 10px;
+}
+
+.btn-adopt{
+    margin-bottom: 15px;
+}
+
+.cat-dog{
+    margin-left:15px;
+}
+
+.error{
+    color:red;
+    font-size: 15px;
+    margin:10px;
+}
+

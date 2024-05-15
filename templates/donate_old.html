@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donaciones</title>
+    <link rel="shortcut icon" href="../static/img/cat.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/donate.css" type="text/css">
+</head>
+
+<body>
+   <header class="donate-title">
+            <h1>Huellitas</h1>
+    </header>
+    <main>
+        <section class="donations">
+            <h2>Donaciones</h2>
+            <form action="" method="get" id="formRegister">
+                <div>
+                    <label for="firstname">Nombre: </label>
+                    <input type="text" name="firstname" id="firstname" maxlength="12" placeholder="Nombre">
+                    <div id="errorfirstname"></div>
+                </div>
+                <br>
+
+                <div>
+                    <label for="lastname">Apellido: </label>
+                    <input type="text" name="lastname" id="lastname" minlength="2">
+                </div>
+                <br>
+                <div>
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="password">Contraseña: </label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <br>
+                <div>
+                    <label for="birthdate">Fecha de nacimiento: </label>
+                    <input type="date" name="birthdate" id="birthdate" max="2024-01-01">
+                </div>
+                <br>
+                <div>
+                    <label for="country">Pais</label>
+                    <select name="country" id="country" required>
+                        <option value="">Seleccione</option>
+                        <option value="ar">Argentina</option>
+                        <option value="bo">Bolivia</option>
+                        <option value="br">Brasil</option>
+                        <option value="ch">Chile</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <input type="checkbox" name="terms" id="terms" required value="1">
+                    <label for="terms">Acepto terminos y condiciones</label>
+                </div>
+                <br>
+                <label for="sexom">Masculino</label>
+                <input type="radio" name="sexo" id="sexom" value="1">
+                <label for="sexof">Femenino</label>
+                <input type="radio" name="sexo" id="sexof" value="2">
+                <br><br>
+                <label for="sexom">Deseo recibir promociones</label>
+                <input type="checkbox" name="promo" id="promos" value="1">
+                <label for="sexof">Deseo recibir informacion</label>
+                <input type="checkbox" name="promo" id="info" value="2">
+                <br><br>
+                <input id="reg_btn" type="submit" value="Registrarse">
+
+
+            </form>
+            </section>
+
+    </main>
+
+    <script src="../static/js/funciones.js"></script>
+
+</body>
+</html>

@@ -1,17 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./static/css/style.css">
-    <link rel="shortcut icon" href="./static/img/cat.ico" type="image/x-icon">
-    <title>Huellitas</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./static/css/style.css">
+        <link rel="stylesheet" href="./static/css/donate.css">
+        <link rel="shortcut icon" href="./static/img/icons8-cat-footprint-30.ico" type="image/x-icon">
+        <title>Huellitas</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link href=".\static\uicons-regular-straight\css\uicons-regular-straight.css" rel="stylesheet">
+    </head>
 
 <body>
+    <header class="header">
+        <nav>
+          <div id="logo">
+            <a href="./index.html">
+              <i class="fi fi-rs-paw"></i>
+              <span id="logo-text">
+                Huellitas
+              </span>
+            </a>
+          </div>
+       
+          <ul class="links_nav">
+                <li>
+                  <a href="./adopt.html">Adopciones</a>
+                </li>
+                <li>
+                  <a href="./transit.html">Tránsito</a>
+                </li>
+                <li>
+                  <a href="./donate.html">Donaciones</a>
+                </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="donate-accounts">
+            <div id="donate-table">
+                <table border="3">
+                    <thead>
+                        <tr>
+                            <th colspan="3">Transferencia Bancaria</th>    
+                            </tr>    
+                    </thead>
+                        
+                    <tbody>
+                            <tr>
+                                <th><strong>Nombre cuenta</strong></th>
+                                <th><strong>CVU / CBU</strong></th>
+                                <th><strong>Alias</strong></th>
+                            </tr>
+                            <tr>
+                                <td>Cuenta corriente $ Huellitas</td>
+                                <td>11153517865xxx</td>
+                                <td>huellitas.pesos</td>
+                            </tr>
+                            <tr>
+                                <td>Cuenta corriente U$D Huellitas</td>
+                                <td>56456412315612</td>
+                                <td>huellitas.dolares</td>
+                            </tr>
+                            <tr>
+                                <td>Mercadopago</td>
+                                <td>15655545654566</td>
+                                <td>huellitas.mp</td>
+                            </tr>
+                  
+                        </tbody>
+                    </table>
+            </div>
+        </section>
 
-
-    
+    <section>
+        <div id="donate-text">
+            <p>Si podés ayudarnos con otro tipo de donaciones (insumos, alimento, etc),
+                completá los siguientes datos y nos estaremos contactando a la brevedad: </p>
+        </div>
+        <div id="d-form">
+            <form action="" method="get" id="donate-form">
+                <div class="donate-label">
+                    <label for="firstname">Nombre: </label>
+                    <input type="text" name="firstname" id="firstname" maxlength="25" placeholder="Nombre" required>
+                    
+                </div>
+                <div class="donate-label">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" maxlength="20" placeholder="E-mail" required>
+                </div>
+                
+                <input class="btn-donate" type="submit" value="Enviar">
+                
+            </form>
+        </div>
+    </section>
+</main>
+<footer id="footer">
+    <div>
+      <a href="./contact.html">Contactanos</a>
+    </div>
+    <div>
+      <h3>Powered by @Pipi-Dolo 🐾</h3>
+    </div>
+  </footer>
+    <script src="./static/js/index.js">
+    </script>  
 </body>
-
 </html>

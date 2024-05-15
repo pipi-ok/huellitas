@@ -4,14 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/css/style.css">
-    <link rel="shortcut icon" href="./static/img/cat.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/transit.css">
+    <link rel="shortcut icon" href="./static/img/icons8-cat-footprint-30.ico" type="image/x-icon">
     <title>Huellitas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="./static/uicons-regular-straight/css/uicons-regular-straight.css" rel="stylesheet">
+    
 </head>
 
 <body>
-
-
+    <header class="header">
     
+        <nav>
+          <div id="logo">
+            <a href="./index.html">
+              <i class="fi fi-rs-paw"></i>
+              <span id="logo-text">
+                Huellitas
+              </span>
+    
+            </a>
+          </div>
+       
+          <ul class="links_nav">
+                <li>
+                  <a href="#">Adopciones</a>
+                </li>
+                <li>
+                  <a href="./transit.html">Tránsito</a>
+                </li>
+                <li>
+                  <a href="./donate.html">Donaciones</a>
+                </li>
+          </ul>
+          
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner">
+          <div class="banner-text-format">
+            <!-- La imagen se pone desde css -->
+            <h1>Huellitas</h1>
+            <h2>Amiguitos buscando hogar</h2>
+          </div>
+        </section>
+
+        <section id="transit-text" >
+            <h1 id="title-class">Adoptá uno de nuestros amiguitos!</h1>
+            <p>Hay muchos animalitos esperando ansiosos un nuevo hogar y una familia que les de amor.</p>
+            <p>Si estás buscando agrandar tu familia, completá el siguiente formulario y te estaremos contactando:</p>
+        </section>
+
+        <section class="form-transit">
+          <h2 id="transit-form-title">Registro - Adopciones</h2>
+          <form action="#" method="GET" id="adoptRegister">
+              <div class="reg-field">
+                  <label for="firstname">Nombre: </label>
+                  <input type="text" name="firstname" id="firstname" maxlength="20" placeholder="Nombre">
+             </div>
+             <div class= "error" id="error-firstname"></div>
+              
+
+              <div class="reg-field">
+                  <label for="lastname">Apellido: </label>
+                  <input type="text" name="lastname" id="lastname" maxlength="20" placeholder="Apellido">
+              </div>
+              <div class= "error" id="error-lastname"></div>
+              
+              <div class="reg-field">
+                  <label for="email">E-mail: </label>
+                  <input type="email" name="email" id="email"  placeholder="E-mail">
+              </div>
+              <div class= "error" id="error-email"></div>
+
+              <div class="reg-field">
+                <label for="phone">Teléfono: </label>
+                <input type="phone" name="phone" id="phone" >
+            </div>
+            <div class= "error" id="error-phone"></div>
+              
+              
+              
+              <div class="reg-field">
+                  <label for="birthdate">Fecha de nacimiento: </label>
+                  <input type="date" name="birthdate" id="birthdate" max="2024-01-01">
+              </div>
+              
+              <div class="reg-field">
+                  <label for="zona">Zona: </label>
+                  <select name="zona" id="zona" required>
+                      <option value="">Seleccione</option>
+                      <option value="caba">CABA</option>
+                      <option value="gba-norte">GBA Norte</option>
+                      <option value="gba-oeste">GBA Oeste</option>
+                      <option value="gba-sur">GBA Sur</option>
+                  </select>
+              </div>
+              
+             
+              
+              <div class="reg-field">
+              
+              <label for="cat">Quiero adoptar: Un Gato</label>
+              <input type="radio" name="cat-dog" required id="cat" value="cat">
+              <label for="dog" class="cat-dog">Un Perro</label>
+              <input type="radio" name="cat-dog"  value="dog">
+              </div>
+              
+              <div class="reg-field">
+                <input type="checkbox" name="terms" id="terms" required value="1">
+                <label for="terms">Acepto recibir mails de contacto e información, y aseguro que los datos que informé son precisos.</label>
+            </div>
+                
+              <div class="reg-field">
+                <input id="reg-btn-adopt" type="button" value="Registrarse" class="btn-adopt">
+              </div>
+                
+
+
+          </form>
+          </section>
+
+
+
+    </main>
+
+    <footer id="footer">
+        <div>
+          <a href="./contact.html">Contactanos</a>
+        </div>
+        <div>
+          <h3>Powered by @Pipi-Dolo 🐾</h3>
+        </div>
+      </footer>
+      <script src="./static/js/adopt.js"></script>
 </body>
 
 </html>
