@@ -2,10 +2,10 @@
     --bg-color:#F5F5DC;
     --primary-color:#F2CBBB;
     --secondary-color: #87CEEB;
-    --third-color: #8DA290;
-    --third-bis-color: #D3D3D3;
+    --third-color: #617865;
+    --third-bis-color: #e3dbdb;
     --bg-input-color: #FFAEA5;
-    --enfasis-color: #993366  
+    --enfasis-color: #9e3428;  
 }
 
 * {
@@ -23,6 +23,7 @@ body{
 }
 
 .header{
+   /* display: flex; */
     background-color: var(--primary-color);
     position: sticky;
     top: 0;
@@ -110,11 +111,13 @@ nav a{
     display: grid;
     grid-template-columns: auto;
     justify-items: center;
+    text-align: center;
     height: 40px;
     padding: 80px;
     font-size:200%;
     text-shadow: 2px 2px 2px #525252;
-    color: var(--bg-input-color)
+    color: var(--bg-input-color);
+    margin-bottom: 40px;
 }
 
 .new_friend_img{
@@ -125,14 +128,18 @@ nav a{
 
 .new_friend_detail{
     font-size: 20px;
-    color:var(--bg-input-color);
-    background-color: var(--third-bis-color);
+    color:var(--third-color);
+    background-color: var(--primary-color);
     /* position: absolute; */
     bottom: -100%;
     padding: 30px;
     max-height: 100%;
     line-height: 40px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
     
     
     
@@ -145,8 +152,9 @@ nav a{
     border-radius: 10px; 
     font-weight: bolder; 
     font-variant: small-caps; 
-    background-image: linear-gradient(to right, var(--bg-input-color) 0%, rgb(238, 103, 125) 50%, rgb(119, 6, 25) 100%); 
-    box-shadow: rgb(0, 0, 0) 0px 0px 15px 5px; 
+    background-color: #9e3428;
+    /* background-image: linear-gradient(to right, var(--bg-input-color) 0%, rgb(191, 96, 112) 50%, rgb(108, 44, 55) 100%);  */
+    box-shadow: rgb(58, 58, 58) 5px 5px 10px; 
     border: 2px solid rgb(119, 6, 25); 
     display: inline-block;
     
@@ -189,14 +197,17 @@ nav a{
 }
  .transit_detail{
     font-size: 20px;
-    color:var(--bg-input-color);
-    background-color: var(--third-bis-color);
+    color:var(--third-color);
+    background-color: var(--primary-color);
     /* position: absolute; */
     /* bottom: -100%; */
     padding: 30px;
     max-height: 100%;
     line-height: 30px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
  }
 
  .transit-grid{
@@ -220,8 +231,10 @@ nav a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 20px;
     color: var(--third-color);
+   
+
  }
 
  #adress{
@@ -230,6 +243,11 @@ nav a{
     font-size: 20px;
     column-gap: 100px;
     align-content: center;
+    justify-content: center;
+    width: 80%;
+    justify-items: center;
+    align-items: center;
+    margin: 50px auto;
 
  }
 
@@ -268,6 +286,13 @@ nav a{
 
  /*CELUS*/
  @media screen and (max-width: 767px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    
     .adopt-grid{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6,1fr);
@@ -289,5 +314,16 @@ nav a{
     }
     #adress{
         grid-template-columns: repeat(1,1fr);
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    #logo-text{
+       display: none; 
+    }
+
+    h3 {
+        font-size: 15px;
     }
  }
