@@ -81,12 +81,14 @@ main{
     position: relative;
     color: aliceblue;
     margin-top: 10px;
-    width:100px;
+    
 }
+
+
 
 .donate-label label{
     
-    width: 100px;
+    width: 150px;
 }
 
 #reg_btn {
@@ -128,15 +130,62 @@ footer{
 
 
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     body::before {
         background-image: none;
-        background-color: var(--bg-color);
-        
+        background-color: var(--bg-input-color);
     }
 
+    * {
+        color:black;
+    }
+
+    .header nav a {
+        color:black;
+    }
+
+    #donate-table{
+        display: flex;
+        
+        justify-content: center;
+    }
+
+   #donate-text {
+        
+        text-align: center;
+        width: 100%;    
+    }
+
+    #donate-text p{
+    color: black;
+    }
+    
+    #donate-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer{
+        background-color: var(--bg-input-color);
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        color: var(--third-color);
+       
+     }
+
+     p {
+        margin-bottom: 20px;
+        padding-top: 20px;
+     }
+
+    }
    
-    #donate-form{
+    /* #donate-form{
         position: relative;
     }
 
@@ -200,4 +249,4 @@ footer{
     }
 }
 
- */
+ */ 
