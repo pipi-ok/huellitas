@@ -57,7 +57,7 @@ nav{
     justify-content: space-between;
     height: 80px;
     align-items: center;
-    padding: 5px;
+    padding: 10px;
 }
 
 nav a{
@@ -289,8 +289,7 @@ nav a{
     nav{
         display: flex;
         flex-direction: column;
-        
-        
+              
     }
     
     .adopt-grid{
@@ -326,4 +325,13 @@ nav a{
     h3 {
         font-size: 15px;
     }
+
+    .links_nav{
+        gap: 40px;
+    }
+
+    #title-class{
+        margin-bottom: 50px;
+    }
+    
  }

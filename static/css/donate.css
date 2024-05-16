@@ -35,6 +35,7 @@ a{
     top: 0;
     left: 0;
     width: 100%;
+    
 }
 
 .header nav a{
@@ -99,6 +100,7 @@ main{
 
 #donate-form{
     position: relative;
+    padding-left: 15px;
 
 }
 
@@ -113,25 +115,18 @@ footer{
     justify-content: space-between;
     align-items: center;
     
-    padding: 5px;
+    padding: 15px;
     color: var(--bg-color);
  }
 
- .btn-donate{
-    color: rgb(255, 255, 255); 
-    font-size: 16px; 
-    line-height: 16px; 
-    margin-top: 15px;
-    padding: 10px; 
-    border-radius: 10px; 
-    font-weight: bolder; 
-    font-variant: small-caps; 
-    background-image: linear-gradient(to right, var(--bg-input-color) 0%, rgb(238, 103, 125) 50%, rgb(119, 6, 25) 100%); 
-    box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; 
-    border: 2px solid rgb(119, 6, 25); 
-    display: inline-block;
+ .btn-adopt{
+    margin-top: 20px;
     
-}
+ }
+ 
+    
+
+
 
 /* @media (max-width: 768px) {
     body::before {
